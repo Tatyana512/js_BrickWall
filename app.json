@@ -1,0 +1,7 @@
+{
+  "name": "Node.js Application",
+  "description": "Task Application for Kasper",
+  "repository": "https://github.com/Tatyana512/task4kasper,
+  "logo": "",
+  "keywords": ["node", "express", "static"]
+}

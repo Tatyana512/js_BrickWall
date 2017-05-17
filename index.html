@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>BrickWall </title> 
+<script type="text/javascript" src="js/script.js"> 
+</script>
+<link href="css/main.css" rel='stylesheet' />
+</head>
+<body>
+<header>
+     <h1>Построить кирпичную стену</h1>
+</header>
+
+<div id="main">
+    <article>       
+     <figure>
+         <div style="height:300px;overflow:hidden" id='wallPlace'>       
+           
+         
+         </div>         
+      </figure>       
+      
+    </article>
+    <nav>  
+    <p><b>Размеры кирпича</b></p>
+    Ширина кирпича : <input type=number name="xBrick" id="xBrick" /> <br/>
+    Высоты кирпича : <input type=number name="yBrick" id="yBrick" />  <br/>
+    
+    Цвет Кирпича: <select id="colorBrick"> <option value='#DC3D24'> Oранжевый </option> <option value="#4EB1BA"> Синий </option>
+    <option value="#F2EFE4"> Белый </option> <option value="#CB8C1D"> Светло-Коричневый </option>
+    <option value="#4C3327"> Тёмно-Коричневый </option>  
+    <option value="#BD3632"> Красный </option>  
+     </select>
+    
+    Случайный цвет:  <input type="checkbox" name="color" id='randomColorCheckBox' value="random" /> 
+    <br/><br/>
+    <p><b>Размеры стены</b></p>
+    
+     по ширине: <input type=number name="xWall" id="xWall" />
+     по высоте:  <input type=number name="yWall" id="yWall" />
+    <input type="button" value="Построить" onclick="BrickWall()">
+ 
+    </nav>
+   
+</div>
+<footer>
+<h3>Tatyana Yolkina (ytata.512@gmail.com) <br/> Количество кирпичей: <span id='countBricks'> </span></h3>
+</footer>
+
+</body>
+</html>
